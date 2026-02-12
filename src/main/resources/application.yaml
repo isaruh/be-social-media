@@ -21,3 +21,10 @@ server:
 logging:
   level:
     org.springframework.boot.autoconfigure.jdbc: DEBUG
+
+sigh:
+  jwt:
+    secret: ${JWT_SECRET}
+    expiration: ${JWT_EXPIRATION}
+    refresh_expiration: ${JWT_REFRESH}
+    issuer: ${JWT_ISSUER}
